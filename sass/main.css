@@ -68,7 +68,7 @@ body {
 
 .inner-section .basis-part {
   background-color: #d0d0d0;
-  padding: 3.75rem;
+  padding: 3.75rem 3.75rem 5rem 3.75rem;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,7 +84,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  min-height: 550px;
+  min-height: 34.375rem;
   /* opacity: 0; */
   /* transition: all 0.3s ease-in; */
 }
@@ -140,7 +140,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  min-height: 550px;
+  min-height: 34.375rem;
   /* opacity: 0; */
   /* transition: all 0.3s ease-in; */
 }
@@ -197,7 +197,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  min-height: 550px;
+  min-height: 34.375rem;
   /* opacity: 0; */
   /* transition: all 0.3s ease-in; */
 }
@@ -237,7 +237,7 @@ body {
 }
 
 .team-section {
-  padding: 5rem 0;
+  padding: 5rem 0 0 0;
 }
 
 .team-section .heading-tertiary {
@@ -256,7 +256,7 @@ body {
   width: 100%;
   left: 0;
   right: 0;
-  height: 43%;
+  height: 50%;
   top: auto;
   bottom: 0;
   -webkit-transform: scaleX(1) scaleY(-1);
@@ -266,6 +266,29 @@ body {
 .team-section svg rect {
   left: 0;
   right: 0;
+}
+
+.footer {
+  margin: 40px 0;
+}
+
+.footer .container-footer {
+  padding: 60px 40px;
+  width: 848px;
+}
+
+.footer .container-footer .footer-para {
+  display: inline;
+}
+
+.footer .container-footer .footer-para p {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+.footer .container-footer .footer-para p a {
+  color: #2a2a2a;
 }
 
 /* .fadeInUp {

@@ -11,7 +11,7 @@ $div3-bg-color: #2a2a2a;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    min-height: 550px;
+    min-height: 34.375rem;
     /* opacity: 0; */
     /* transition: all 0.3s ease-in; */
 }
@@ -80,10 +80,11 @@ body {
 /* sister brands section */
 .inner-section {
     padding: 20px;
-    .heading-tertiary{
+
+    .heading-tertiary {
         @include heading-tertiary;
 
-        h3{
+        h3 {
             @include heading-3;
         }
     }
@@ -91,7 +92,7 @@ body {
     /* basis - col 1 */
     .basis-part {
         background-color: $div1-bg-color;
-        padding: 3.75rem;
+        padding: 3.75rem 3.75rem 5rem 3.75rem;
 
         @include card-background;
 
@@ -214,12 +215,12 @@ body {
 }
 
 .team-section {
-    padding: 5rem 0;
+    padding: 5rem 0 0 0;
 
-    .heading-tertiary{
+    .heading-tertiary {
         @include heading-tertiary;
 
-        h3{
+        h3 {
             @include heading-3;
         }
     }
@@ -229,18 +230,46 @@ body {
         width: 100%;
         left: 0;
         right: 0;
-        height: 43%;
+        height: 50%;
         top: auto;
         bottom: 0;
         transform: scaleX(1) scaleY(-1);
 
-        rect{
+        rect {
             left: 0;
             right: 0;
         }
     }
-    
+
 }
+
+
+.footer {
+    margin: 40px 0;
+    .container-footer{
+        padding: 60px 40px;
+        width: 848px;
+    
+    .footer-para {
+        display: inline;
+        
+
+        p {
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 1.4;
+
+            a {
+                color: $div3-bg-color;
+            }
+        }
+
+
+    }
+
+    }
+}
+
 
 
 
