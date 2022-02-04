@@ -332,48 +332,59 @@ body {
         }
     }
 
-    .photo-content{
-        display: inline;
-        color: $color-white;
-        // position: relative;
+    .container-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
-        .img1 {
-        display: inline-block;
-        padding: 0;
-        img{
-            width: 200px;
-            height: auto;
-          
+        .photo-content {
+            color: $color-white;
+            // position: relative;
+
+            .img1 {
+                display: inline-block;
+                padding: 0;
+
+                img {
+                    width: 200px;
+                    height: auto;
+
+                }
+            }
+
+            .content {
+                width: 100%;
+                margin: auto 0;
+                text-align: center;
+            }
         }
     }
-        .content{
-            width: 100%;
-            margin: auto 0;
-            text-align: center;
-        }
-    }
 
-
-.black-rectangle{
-
-    svg {
-        position: absolute;
+    .black-rectangle {
         width: 100%;
-        left: 0;
-        right: 0;
-        height: 55%;
-        top: auto;
-        bottom: -70%;
-        z-index: -1;
-        transform: scaleX(1) scaleY(-1);
-        
+        padding: 0;
+        margin: 0;
+        background: $div3-bg-color;
+        display: block;
 
-        rect {
-            left: 0;
-            right: 0;
-        }
+        // svg {
+        //     position: absolute;
+        //     width: 100%;
+        //     left: 0;
+        //     right: 0;
+        //     height: 55%;
+        //     top: auto;
+        //     bottom: -70%;
+        //     z-index: -1;
+        //     transform: scaleX(1) scaleY(-1);
+
+
+        //     rect {
+        //         left: 0;
+        //         right: 0;
+        //     }
+        // }
     }
-}
 }
 
 // FOOTER

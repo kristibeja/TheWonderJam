@@ -353,43 +353,43 @@ body {
   text-align: center;
 }
 
-.team-section .photo-content {
-  display: inline;
+.team-section .container-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team-section .container-row .photo-content {
   color: #fff;
 }
 
-.team-section .photo-content .img1 {
+.team-section .container-row .photo-content .img1 {
   display: inline-block;
   padding: 0;
 }
 
-.team-section .photo-content .img1 img {
+.team-section .container-row .photo-content .img1 img {
   width: 200px;
   height: auto;
 }
 
-.team-section .photo-content .content {
+.team-section .container-row .photo-content .content {
   width: 100%;
   margin: auto 0;
   text-align: center;
 }
 
-.team-section .black-rectangle svg {
-  position: absolute;
+.team-section .black-rectangle {
   width: 100%;
-  left: 0;
-  right: 0;
-  height: 55%;
-  top: auto;
-  bottom: -70%;
-  z-index: -1;
-  -webkit-transform: scaleX(1) scaleY(-1);
-          transform: scaleX(1) scaleY(-1);
-}
-
-.team-section .black-rectangle svg rect {
-  left: 0;
-  right: 0;
+  padding: 0;
+  margin: 0;
+  background: #2a2a2a;
+  display: block;
 }
 
 .container-footer {
