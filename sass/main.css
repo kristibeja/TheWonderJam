@@ -368,28 +368,142 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #2a2a2a;
   width: 100%;
+  position: relative;
+  margin-bottom: -152px;
 }
 
 .team-section .container-row .photo-content {
   color: #fff;
-}
-
-.team-section .container-row .photo-content .img1 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   padding: 0;
 }
 
-.team-section .container-row .photo-content .img1 img {
+.team-section .container-row .photo-content .img-allie {
+  position: relative;
+  width: 200px;
+  z-index: 2;
+  padding-bottom: 5px;
+  margin: 0px;
+}
+
+.team-section .container-row .photo-content .img-allie img {
   width: 200px;
   height: auto;
 }
 
-.team-section .container-row .photo-content .content {
-  width: 100%;
+.team-section .container-row .photo-content .content-allie {
+  position: relative;
+  width: 200px;
+  padding-top: 20px;
   margin: auto 0;
   text-align: center;
+}
+
+.team-section .container-row .photo-content .img-matt {
+  position: relative;
+  z-index: 10;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.team-section .container-row .photo-content .img-matt img {
+  width: 250px;
+  height: auto;
+}
+
+.team-section .container-row .photo-content .content-matt {
+  position: relative;
+  width: 200px;
+  z-index: 3;
+  padding-top: 10px;
+  margin: auto 0;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.team-section .container-row .photo-content .img-adam {
+  position: relative;
+  width: 200px;
+  z-index: 0;
+  padding-bottom: 10px;
+}
+
+.team-section .container-row .photo-content .img-adam img {
+  width: 250px;
+  height: auto;
+}
+
+.team-section .container-row .photo-content .content-adam {
+  position: relative;
+  width: 200px;
+  padding-top: 20px;
+  margin: auto 10px;
+  text-align: center;
+}
+
+.team-section .container-row .photo-content .img-dayna {
+  position: relative;
+  width: 200px;
+  z-index: 4;
+  padding-bottom: 20px;
+  margin-right: 0px;
+}
+
+.team-section .container-row .photo-content .img-dayna img {
+  width: 200px;
+  height: auto;
+}
+
+.team-section .container-row .photo-content .content-dayna {
+  position: relative;
+  width: 200px;
+  z-index: 3;
+  padding-top: 20px;
+  margin: auto 0;
+  text-align: center;
+}
+
+.team-section .container-row .photo-content .img-ashli {
+  position: relative;
+  width: 200px;
+  padding-bottom: 20px;
+  margin-right: 0px;
+}
+
+.team-section .container-row .photo-content .img-ashli img {
+  width: 300px;
+  height: auto;
+}
+
+.team-section .container-row .photo-content .content-ashli {
+  position: relative;
+  width: 200px;
+  z-index: 3;
+  padding-top: 20px;
+  margin: auto 0;
+  text-align: center;
+}
+
+.team-section svg {
+  position: relative;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 30%;
+  top: auto;
+  z-index: -1;
+  -webkit-transform: scaleX(1) scaleY(-1);
+          transform: scaleX(1) scaleY(-1);
+  -webkit-transform: translatey(-190px);
+          transform: translatey(-190px);
+}
+
+.team-section svg rect {
+  left: 0;
+  right: 0;
 }
 
 .container-footer {
@@ -513,6 +627,12 @@ body {
   }
   .photo-content {
     text-align: center;
+  }
+  .container-row {
+    background-color: #2a2a2a;
+  }
+  svg {
+    visibility: hidden;
   }
 }
 
