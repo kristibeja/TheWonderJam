@@ -336,9 +336,12 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        background-color: $div3-bg-color;
+            width: 100%;
 
         .photo-content {
             color: $color-white;
+        
             // position: relative;
 
             .img1 {
@@ -361,11 +364,11 @@ body {
     }
 
     .black-rectangle {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        background: $div3-bg-color;
-        display: block;
+        // background-color: $div3-bg-color;
+        // width: 100%;
+        // padding: 0;
+        // margin: 0;
+        // display: block;
 
         // svg {
         //     position: absolute;
@@ -424,4 +427,11 @@ body {
             text-transform: uppercase;
         }
     }
+}
+
+
+@media screen and (max-width: 320px){
+        h2{
+            font-size: 15px;
+        }
 }
