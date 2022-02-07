@@ -402,7 +402,6 @@ body {
                 padding-top: 10px;
                 margin: auto 0;
                 text-align: center;
-                // margin-left: 30px;
 
                 h4 {
                     font-size: 18px;
@@ -432,7 +431,7 @@ body {
                 position: relative;
                 width: 200px;
                 padding-top: 20px;
-                margin: auto 10px;
+                margin-left: 40px;
                 text-align: center;
 
                 h4 {
@@ -517,12 +516,7 @@ body {
     }
 
 
-    // .black-rectangle {
-    //     background-color: $div3-bg-color;
-    //     width: 100%;
-    //     padding: 0;
-    //     margin: 0;
-    //     display: block;
+
 
     svg {
         position: relative;
@@ -605,7 +599,7 @@ body {
         text-align: left;
 
         h2 {
-            font-size: 20px;
+            font-size: 21px !important;
             font-weight: 400;
             line-height: 1.4;
             width: 300px;
