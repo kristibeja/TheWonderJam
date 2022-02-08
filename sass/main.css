@@ -345,6 +345,7 @@ body {
 
 .team-section {
   padding: 5rem 0 0 0;
+  overflow: hidden;
 }
 
 .team-section .heading-tertiary {

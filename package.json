@@ -1,5 +1,24 @@
 {
   "dependencies": {
+    "node-sass": "^7.0.1",
     "sass": "^1.49.7"
-  }
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch sass -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristibeja/TheWonderJam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristibeja/TheWonderJam/issues"
+  },
+  "homepage": "https://github.com/kristibeja/TheWonderJam#readme",
+  "description": ""
 }
