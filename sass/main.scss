@@ -537,11 +537,21 @@ body {
         }
     }
 
-    // }
 }
 
 
 // Form section
+.modify {
+    width: 50%;
+    display: block;
+    margin: auto;
+
+    .validation{
+        display: none;
+    }
+}
+
+// modal
 
 
 

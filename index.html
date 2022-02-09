@@ -214,64 +214,121 @@
     <section>
         <div class="container">
             <div class="modify">
-            <form action="" class="was-validated">
+                <form action="">
 
-                <div class="form-group">
-                    <label for="name" class="form-label">Name</label> <br>
-                    <input type="text" class="form-control" placeholder="Enter your name" required>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out your name!</div>
-                </div>
-
-                <div class="form-group">
-                    <label for="email" class="form-label">E-mail</label> <br>
-                    <input type="email" name="" id="email" class="form-control" placeholder="Enter your email" required>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out your email!</div>
-                </div>
-
-                <div class="form-group">
-                    <label for="message" class="form-label">Message</label> <br>
-                    <textarea name="" id="" cols="50" rows="5" placeholder="Write your message..." class="form-control" required></textarea>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please write a message here!</div>
-                </div>
-                
-                <div class="form-check">
-                    <input type="checkbox" name="checkbox" value="check" id="checkbox-terms" data-toggle="modal" data-target="exampleModalLong" required/> Agree with our terms and conditions <br>
-                    <!-- <div class="invalid-feedback">
-                        You must agree before submitting.
-                      </div> -->
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLongTitle">Terms & conditions</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, molestiae? Mollitia doloribus inventore a consequuntur 
-                                praesentium! Architecto obcaecati veritatis, reprehenderit impedit iste repellendus facere nesciunt asperiores minima, 
-                                temporibus dignissimos id!
-                                <input type="checkbox" name="checkbox" value="check" id="checkbox-terms" required/> Agree with our terms and conditions
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                          </div>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label> <br>
+                        <input type="text" class="form-control" placeholder="Enter your name" required>
+                        <div class="validation">
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out your name!</div>
                         </div>
-                      </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">E-mail</label> <br>
+                        <input type="email" name="" id="email" class="form-control" placeholder="Enter your email" required>
+                       <div class="validation">
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out your email!</div>
+                       </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label> <br>
+                        <textarea name="" id="" cols="50" rows="5" placeholder="Write your message..." class="form-control" required></textarea>
+                        <div class="validation">
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please write a message here!</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="checkbox" name="checkbox" value="check" id="checkbox-terms"/> 
+                        Agree with our terms and conditions <br>
+                        <!-- <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div> -->
+
+                        <input type="submit" name="submit" value="Submit" id="btn-submit"  onclick="validateForm()"/>
+
+                        <!-- Modal -->
+                        <div id="myModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <h2>Read our terms and conditions</h2>
+                          
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi iure modi saepe, aspernatur 
+                                corporis pariatur debitis sed illo veniam repellat est. Repellendus, enim. Praesentium rerum tenetur nisi fuga maiores.
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi debitis dolorem maiores reprehenderit, pariatur dolore quasi 
+                              earum numquam laudantium cumque aut. Obcaecati laborum quasi fugiat pariatur quas similique cumque excepturi!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae iste, eos perspiciatis eius cumque id ipsa facere labore, 
+                            assumenda odio fuga deleniti minima? At blanditiis cumque suscipit omnis cupiditate optio.</p>
+                          
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi iure modi saepe, aspernatur 
+                              corporis pariatur debitis sed illo veniam repellat est. Repellendus, enim. Praesentium rerum tenetur nisi fuga maiores.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi debitis dolorem maiores reprehenderit, pariatur dolore quasi 
+                            earum numquam laudantium cumque aut. Obcaecati laborum quasi fugiat pariatur quas similique cumque excepturi!
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae iste, eos perspiciatis eius cumque id ipsa facere labore, 
+                          assumenda odio fuga deleniti minima? At blanditiis cumque suscipit omnis cupiditate optio.</p>
+                          
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi iure modi saepe, aspernatur 
+                            corporis pariatur debitis sed illo veniam repellat est. Repellendus, enim. Praesentium rerum tenetur nisi fuga maiores.
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi debitis dolorem maiores reprehenderit, pariatur dolore quasi 
+                          earum numquam laudantium cumque aut. Obcaecati laborum quasi fugiat pariatur quas similique cumque excepturi!
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae iste, eos perspiciatis eius cumque id ipsa facere labore, 
+                          assumenda odio fuga deleniti minima? At blanditiis cumque suscipit omnis cupiditate optio.</p>
+                            <input type="checkbox" value="1" onclick="enable_btn(this)"> 
+                            <label for="" class="label1"> I accept the terms and conditions</label> <br>
+                          
+                            <button type="button" id="myModalBtn">Done</button>
+                            </div>
+                          
+                          </div>
 
 
-                    <input type="submit" name="submit" value="Submit" id="btn-submit" disabled/>
-                </div>
 
-            </form>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Terms & conditions</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, molestiae? Mollitia doloribus inventore a consequuntur 
+                                    praesentium! Architecto obcaecati veritatis, reprehenderit impedit iste repellendus facere nesciunt asperiores minima, 
+                                    temporibus dignissimos id!
+                                    <input type="checkbox" name="checkbox" value="check" id="checkbox-terms" required/> Agree with our terms and conditions
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div> -->
+                        
+                    </div>
+
+                </form>
+            </div>
         </div>
     </section>
     <!-- Form section ends -->

@@ -563,6 +563,16 @@ body {
   right: 0;
 }
 
+.modify {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.modify .validation {
+  display: none;
+}
+
 .container-footer {
   padding: 30px 0;
   max-width: 54%;
