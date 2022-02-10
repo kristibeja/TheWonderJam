@@ -569,8 +569,34 @@ body {
   margin: auto;
 }
 
-.modify .validation {
-  display: none;
+.modify .form-group.success input,
+.modify .form-group.success textarea {
+  border: 2px solid #2ecc71;
+}
+
+.modify .form-group.success .error-msg {
+  visibility: hidden;
+}
+
+.modify .form-group.error input,
+.modify .form-group.error textarea {
+  border: 2px solid #e74c3c;
+}
+
+.modify .form-group.error .error-msg {
+  visibility: visible;
+  font-size: 10px;
+  color: #e74c3c;
+}
+
+.modify .form-group .error-msg {
+  visibility: hidden;
+}
+
+.modify #myBtn {
+  margin: 10px 10px 10px 0;
+  border-radius: 4px;
+  padding: 3px;
 }
 
 .modify .modal {

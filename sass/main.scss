@@ -5,6 +5,10 @@ $color-black: #000;
 $div3-bg-color: #2a2a2a;
 $footer-p-color: #8e8e8e;
 
+$success-color: #2ecc71;
+$error-color: #e74c3c;
+
+
 @mixin paragraph-col($col) {
     overflow-wrap: break-word;
     font-size: 15px;
@@ -546,11 +550,43 @@ body {
     display: block;
     margin: auto;
 
-    .validation {
-        display: none;
+    .form-group{
+        &.success input,
+        &.success textarea{
+                border: 2px solid $success-color;             
+            }
+
+        &.success .error-msg{
+            visibility: hidden;
+        }
+        
+        &.error input,
+        &.error textarea{
+            border: 2px solid $error-color;
+        }
+
+        &.error .error-msg{
+            // display: block;
+            visibility: visible;
+            font-size: 10px;
+            color: $error-color;
+        }
+        // .validation {
+        //     padding-bottom: 20px;
+        //     // visibility: hidden;
+        //     display: none;
+        // }
+        .error-msg{
+            visibility: hidden;
+        }
     }
 
-
+   
+    #myBtn{
+        margin: 10px 10px 10px 0;
+        border-radius: 4px;
+        padding: 3px;
+    }
     // the modal
     .modal {
         display: none;
