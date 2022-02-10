@@ -550,43 +550,46 @@ body {
     display: block;
     margin: auto;
 
-    .form-group{
-        &.success input,
-        &.success textarea{
-                border: 2px solid $success-color;             
-            }
+    .form-group {
 
-        &.success .error-msg{
+        &.success input,
+        &.success textarea {
+            border: 2px solid $success-color;
+        }
+
+        &.success .error-msg {
             visibility: hidden;
         }
-        
+
         &.error input,
-        &.error textarea{
+        &.error textarea {
             border: 2px solid $error-color;
         }
 
-        &.error .error-msg{
+        &.error .error-msg {
             // display: block;
             visibility: visible;
             font-size: 10px;
             color: $error-color;
         }
+
         // .validation {
         //     padding-bottom: 20px;
         //     // visibility: hidden;
         //     display: none;
         // }
-        .error-msg{
+        .error-msg {
             visibility: hidden;
         }
     }
 
-   
-    #myBtn{
+
+    #myBtn {
         margin: 10px 10px 10px 0;
         border-radius: 4px;
         padding: 3px;
     }
+
     // the modal
     .modal {
         display: none;
@@ -633,15 +636,24 @@ body {
                     cursor: pointer;
                 }
             }
-            h2{
+
+            h2 {
                 padding-bottom: 10px;
             }
 
-            .label1 {
-                color: blue;
+            .btn-right {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .label2 {
+                text-decoration: underline;
             }
 
             #myModalBtn {
+                margin: 10px 10px 10px 0;
+                border-radius: 4px;
+                padding: 3px;
                 width: 15%;
             }
 

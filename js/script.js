@@ -16,32 +16,44 @@
   function checkInputs(){
     const nameValue =  name.value.trim();
     const emailValue = email.value.trim();
-    const messageValue = message.value.trim(); //removes extra space
+    const messageValue = message.value.trim(); //heq hapesirat e teperta
+
+    let nameBool = false, emailBool = false, messageBool = false;
 
     if(nameValue === ''){
       //error
       setErrorFor(name, 'Please fill your name');
+      nameBool = false;
     } else {
       //success
       setSuccessFor(name);
+      nameBool = true;
     }
 
 
     if(emailValue === ''){
       //error
       setErrorFor(email, 'Email can not be blank');
+      emailBool = false;
     } else {
       //success
       setSuccessFor(email);
+      emailBool = true;
     }
 
 
     if(messageValue === ''){
       //error
       setErrorFor(message, 'Message text can not be blank');
+      messageBool = false;
     } else {
       //success
       setSuccessFor(message);
+      messageBool = true;
+    }
+
+    if(nameBool && emailBool && messageBool){
+      window.location = 'https://podfollow.com/1243338956/episode/f1aa8ae0f1d0c46b832a9ef9fefe8a138f871568/view';
     }
 
   }
@@ -62,34 +74,9 @@
     function setSuccessFor(input){
       const formGroup = input.parentElement;
       formGroup.className = 'form-group success';
+      // window.location = 'https://podfollow.com/1243338956/episode/f1aa8ae0f1d0c46b832a9ef9fefe8a138f871568/view';
     }
 
-
-
-function validateForm(){
-    console.log("Kristi has a lot of work to do!");
-
-    console.log("Kristi did an amazing job!");
-
-    // if value != null submit 
-    // else show validation error messages 
-
-    // form.addEventListener('submit', (e) => {
-    //   let messages = []
-    //   if (name.value === '' || name.value == null){
-    //     messages.push('Name is required')
-    //   }
-
-    //   if (password)
-
-    //   if (messages.length > 0){
-    //     e.preventDefault()
-    //     errorElement.innerText = messages.join(', ')
-    //   }
-    // })
-
-
-}
 
 
 // Get the modal
@@ -98,14 +85,23 @@ var modal = document.getElementById("myModal");
 // On checkbox click, open modal
 var chb = document.getElementById("myCheckbox");
 
+// kur klikohet label i terms and conditions
+var label = document.getElementById("label1");
+
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // Get the button inside modal
 var inner_btn = document.getElementById("myModalBtn");
 
-// When the user clicks the button, open the modal 
+// Kur klikohet checkbox, hapet modali
 chb.onclick = function() {
+  modal.style.display = "block";
+}
+
+
+// Kur klikohet label terms & conditions, hapet modali
+label.onclick = function() {
   modal.style.display = "block";
 }
 
@@ -119,7 +115,7 @@ inner_btn.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// Myll modalin kur klikon jashte tij
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";

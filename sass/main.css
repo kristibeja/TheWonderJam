@@ -654,11 +654,23 @@ body {
   padding-bottom: 10px;
 }
 
-.modify .modal .modal-content .label1 {
-  color: blue;
+.modify .modal .modal-content .btn-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modify .modal .modal-content .label2 {
+  text-decoration: underline;
 }
 
 .modify .modal .modal-content #myModalBtn {
+  margin: 10px 10px 10px 0;
+  border-radius: 4px;
+  padding: 3px;
   width: 15%;
 }
 
